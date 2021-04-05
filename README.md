@@ -10,7 +10,7 @@ Você pode navegar por este projeto utilizando o import no main por enquanto,
 
 Mas quando terminar-lo irei gerar um menu para identificar cada exercicio.
 
-Hoje temos 54 videos, e este projeto contempla até a aula 19.
+Hoje temos 54 videos, e este projeto contempla até a aula 22.
 
 Estrutura de pasta dentro de lib. (Na ordem das aulas)
 
