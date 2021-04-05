@@ -1,13 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ola_mundo/drawer/app_controler.dart';
 import 'package:ola_mundo/drawer/custom_plus_float_button.dart';
 import 'package:ola_mundo/drawer/custom_switch.dart';
 
 class CustomScaffold extends StatelessWidget {
-  Widget _body;
+  final Widget body;
 
-  CustomScaffold(this._body);
+  CustomScaffold({this.body});
 
   @override
   Widget build(BuildContext context) {
@@ -31,19 +30,28 @@ class CustomScaffold extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: Icon(Icons.fireplace),
+              title: Text('Desafio Tinder'),
+              subtitle: Text('acessar tela do desafio'),
+              onTap: () {
+                Navigator.of(context)
+                    .pushReplacementNamed('/tinder_challenger');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.money),
+              title: Text('Conversor de moeda'),
+              subtitle: Text('faz o calculo da cotação entre as moedas'),
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/conversor_moeda');
+              },
+            ),
+            ListTile(
               leading: Icon(Icons.logout),
               title: Text('Sair'),
               subtitle: Text('sair do app'),
               onTap: () {
                 Navigator.of(context).pushReplacementNamed('/');
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.fireplace),
-              title: Text('Desafio Tinder'),
-              subtitle: Text('acessar tela do desafio'),
-              onTap: () {
-                Navigator.of(context).pushReplacementNamed('/tinder_challenger');
               },
             ),
           ],
@@ -55,7 +63,7 @@ class CustomScaffold extends StatelessWidget {
           CustomSwitch(),
         ],
       ),
-      body: _body,
+      body: this.body,
       floatingActionButton: CustomPlusFloatingButton(),
     );
   }
