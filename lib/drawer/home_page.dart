@@ -19,6 +19,33 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: Column(
+          children: [
+            UserAccountsDrawerHeader(
+              currentAccountPicture: Image.asset('assets/images/profile.jpg'),
+              accountName: Text('koga187'), 
+              accountEmail: Text('koga187@gmail.com'),
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Inicio'),
+              subtitle: Text('tela de inicio'),
+              onTap: () {
+                print('home');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.logout),
+              title: Text('Sair'),
+              subtitle: Text('sair do app'),
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/');
+              },
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Text("App Boto"),
         actions: [
@@ -33,9 +60,10 @@ class HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Align(
-                alignment: Alignment.bottomCenter,
-                child: Text("Componente do Contador: ${AppController.instance.counter}"),
-              ),
+              alignment: Alignment.bottomCenter,
+              child: Text(
+                  "Componente do Contador: ${AppController.instance.counter}"),
+            ),
             CustomSwitch(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
