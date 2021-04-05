@@ -9,7 +9,8 @@ import 'package:flutter/material.dart';
 // import 'package:ola_mundo/login_page/app_widget.dart';
 // import 'package:ola_mundo/manual_navigation/app_widget.dart';
 // import 'package:ola_mundo/named_routes/app_widget.dart';
-import 'package:ola_mundo/image_network/app_widget.dart';
+// import 'package:ola_mundo/image_network/app_widget.dart';
+import 'package:ola_mundo/image_asset_local/app_widget.dart';
 
 
 main() {
