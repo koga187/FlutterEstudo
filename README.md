@@ -1,16 +1,27 @@
-# ola_mundo
+# Olá Mundo FLUTTER
 
-A new Flutter project.
+Este é um projeto com alguns execicios do tutorial do flutterando.
 
-## Getting Started
+[Playlist com as aulas e os exercicios](https://youtu.be/XeUiJJN0vsE)
 
-This project is a starting point for a Flutter application.
+## Começando
 
-A few resources to get you started if this is your first Flutter project:
+Você pode navegar por este projeto utilizando o import no main por enquanto,
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Mas quando terminar-lo irei gerar um menu para identificar cada exercicio.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Hoje temos 54 videos, e este projeto contempla até a aula 19.
+
+Estrutura de pasta dentro de lib. (Na ordem das aulas)
+
+```
+    counter
+    single_render
+    columns
+    rows
+    manage_parent_state
+    manage_parent_component
+    login_page
+    manual_navigation
+    named_routes
+```
