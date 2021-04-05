@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ola_mundo/tinder_challenger/app_controler.dart';
-import 'package:ola_mundo/tinder_challenger/custom_plus_float_button.dart';
-import 'package:ola_mundo/tinder_challenger/custom_switch.dart';
+import 'package:ola_mundo/drawer/app_controler.dart';
+import 'package:ola_mundo/drawer/custom_plus_float_button.dart';
+import 'package:ola_mundo/drawer/custom_switch.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -43,6 +43,14 @@ class HomePageState extends State<HomePage> {
               subtitle: Text('sair do app'),
               onTap: () {
                 Navigator.of(context).pushReplacementNamed('/');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.fireplace),
+              title: Text('Desafio Tinder'),
+              subtitle: Text('acessar tela do desafio'),
+              onTap: () {
+                Navigator.of(context).pushNamed('/tinder_challenger');
               },
             ),
           ],

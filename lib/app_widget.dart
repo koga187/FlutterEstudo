@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ola_mundo/home_page.dart';
 import 'package:ola_mundo/drawer/login_page.dart';
 import 'package:ola_mundo/drawer/app_controler.dart';
-import 'package:ola_mundo/drawer/home_page.dart';
 import 'package:ola_mundo/tinder_challenger/tinder_challenger_page.dart';
 
 class AppWidget extends StatelessWidget {
