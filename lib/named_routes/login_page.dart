@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ola_mundo/manual_navigation/home_page.dart';
+import 'package:ola_mundo/named_routes/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -49,12 +49,8 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   if (email == 'teste' && password == '123') {
                     print('correto');
-                    // Bellow you can see the manual navigation, this navigation does not need a route.
-                    Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                        builder: (context) => HomePage(),
-                      ),
-                    );
+                    // Bellow you can see the route navigation, this navigation does need a route. setted on app_widget.dart
+                    Navigator.of(context).pushReplacementNamed('/home');
                   } else {
                     print('Login inválido');
                   }

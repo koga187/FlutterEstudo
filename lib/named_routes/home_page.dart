@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ola_mundo/manual_navigation/app_controler.dart';
-import 'package:ola_mundo/manual_navigation/custom_plus_float_button.dart';
-import 'package:ola_mundo/manual_navigation/custom_switch.dart';
+import 'package:ola_mundo/named_routes/app_controler.dart';
+import 'package:ola_mundo/named_routes/custom_plus_float_button.dart';
+import 'package:ola_mundo/named_routes/custom_switch.dart';
 
 class HomePage extends StatefulWidget {
   @override

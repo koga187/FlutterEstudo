@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ola_mundo/manual_navigation/app_controler.dart';
+import 'package:ola_mundo/named_routes/app_controler.dart';
 
 class CustomSwitch extends StatelessWidget {
   @override
