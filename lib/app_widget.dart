@@ -24,7 +24,8 @@ class AppWidget extends StatelessWidget {
           routes: {
             '/': (context) => LoginPage(),
             '/home': (context) => HomePage(),
-            '/tinder_challenger': (context) => TinderChallenger()
+            '/tinder_challenger': (context) => TinderChallenger(),
+            '/conversor_moeda': (context) => TinderChallenger()
           },
         );
       },
