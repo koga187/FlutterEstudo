@@ -23,7 +23,9 @@ class HomePageState extends State<HomePage> {
         child: Column(
           children: [
             UserAccountsDrawerHeader(
-              currentAccountPicture: Image.asset('assets/images/profile.jpg'),
+              currentAccountPicture: ClipOval(
+                child: Image.asset('assets/images/profile.jpg'),
+              ),
               accountName: Text('koga187'), 
               accountEmail: Text('koga187@gmail.com'),
             ),
