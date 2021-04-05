@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ola_mundo/custom_scaffold.dart';
 
 class TinderChallenger extends StatefulWidget {
   @override
@@ -9,7 +10,8 @@ class TinderChallenger extends StatefulWidget {
 class _TinderChallengerState extends State<TinderChallenger> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return CustomScaffold(
+      Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       color: Colors.pink,
@@ -67,6 +69,7 @@ class _TinderChallengerState extends State<TinderChallenger> {
           ),
         ],
       ),
-    );
+    ),
+  );
   }
 }
