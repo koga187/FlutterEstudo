@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ola_mundo/conversor_moeda/view/conversor_moeda_view.dart';
 import 'package:ola_mundo/home_page.dart';
 import 'package:ola_mundo/drawer/login_page.dart';
 import 'package:ola_mundo/drawer/app_controler.dart';
@@ -24,7 +25,8 @@ class AppWidget extends StatelessWidget {
           routes: {
             '/': (context) => LoginPage(),
             '/home': (context) => HomePage(),
-            '/tinder_challenger': (context) => TinderChallenger()
+            '/tinder_challenger': (context) => TinderChallenger(),
+            '/conversor_moeda': (context) => ConversorMoedaView()
           },
         );
       },
