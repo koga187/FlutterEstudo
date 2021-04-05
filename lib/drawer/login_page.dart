@@ -62,7 +62,6 @@ class _LoginPageState extends State<LoginPage> {
                             labelText: 'Password',
                             focusColor: Colors.lightBlueAccent,),
                       ),
-                      
                       SizedBox(
                         height: 15,
                       ),

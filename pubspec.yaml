@@ -49,6 +49,7 @@ flutter:
     - assets/images/boto_logo_sem_fundo.png
     - assets/images/boto_logo.png
     - assets/images/background.png
+    - assets/images/tinder.png
     - assets/images/profile.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
