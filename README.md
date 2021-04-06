@@ -10,18 +10,4 @@ Você pode navegar por este projeto utilizando o import no main por enquanto,
 
 Mas quando terminar-lo irei gerar um menu para identificar cada exercicio.
 
-Hoje temos 54 videos, e este projeto contempla até a aula 22.
-
-Estrutura de pasta dentro de lib. (Na ordem das aulas)
-
-```
-    counter
-    single_render
-    columns
-    rows
-    manage_parent_state
-    manage_parent_component
-    login_page
-    manual_navigation
-    named_routes
-```
+Hoje temos 54 videos, e este projeto contempla até a aula 33.
